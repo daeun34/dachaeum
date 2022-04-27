@@ -220,6 +220,7 @@ input::placeholder {
     padding-bottom: 50px;
     font-family: 'NIXGONM-Vb';
     font-size: 14px;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -366,7 +367,7 @@ input::placeholder {
 .font{
     font-family: 'Chosunilbo_myungjo';
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bold;
     padding: 10px 0 0 68px;
 }
 .star{

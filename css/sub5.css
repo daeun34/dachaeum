@@ -24,6 +24,7 @@ body{
 /*헤더*/
 #header{
 	width: 100%;
+    border-bottom: 2px solid #61564e;
 }
 .header_inner{
     width: 1320px;
@@ -83,169 +84,84 @@ body{
 	text-decoration: underline;
 }
 
-/*배너*/
-#banner{
-    width: 1920px;
-    height: 300px;
-    margin: auto;
-    background: url(../images/sub1/banner.jpg) no-repeat;
-    color: #fff;
-    text-align: center;
-    text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+/*공지사항*/
+#notice{
+    width: 1320px;
+    height: 430px;
+    margin: 100px auto 150px;
 }
-#banner h1{
+#notice h1{
     font-size: 40px;
-    padding: 65px 0 30px 0;
-}
-#banner p{
-    font-family: 'NIXGONM-Vb';
-    font-size: 16px;
-    font-weight: bold;
-}
-#banner li{
-    float: left;
-    padding-top: 60px;
-}
-#banner li:nth-child(1){
-    padding: 60px 0 0 743px;
-}
-#banner li:nth-child(2){
-    padding: 60px 50px 0 50px;
-}
-#banner li a{
-    display: block;
-    padding: 5px 20px;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-}
-#banner li a:hover{
-    background-color: #6e4e37;
-}
-
-/*브랜드 소개*/
-#welcome{
-    width: 1320px;
-    height: 885px;
-    margin: 150px auto;
-}
-#welcome h1{
-    font-size: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     text-align: center;
 }
-#welcome p{
+#notice p{
     font-family: 'NIXGONM-Vb';
-    font-size: 16px;
     font-weight: bold;
     padding-bottom: 50px;
     text-align: center;
 }
-.left{
+#notice li{
     float: left;
+    padding-right: 66px;
 }
-.right{
-    float: right;
+#notice li:nth-child(4){
+    padding-right: 0;
 }
-.img{
-    display: block;
+#notice li:hover{
+        background: url(../images/sub5/hover.png) no-repeat;
 }
-.text{
-    width: 560px;
-    height: 350px;
-    font-size: 16px;
-}
-.text h5{
-    padding-top: 20px;
-}
-.margin{
-    margin-bottom: 50px;
-}
-.pad1{
-    padding: 150px 0 0 60px;
-    box-sizing: border-box;
-}
-.pad2{
-    padding: 50px 0 0 60px;
-    box-sizing: border-box;
+#notice li:hover .hover{
+        opacity: 0.3;
+        transition: all 0.5s;
 }
 
-/*핵심가치*/
-#core_values{
-    width: 1320px; /*높이 주지 말기!*/
+/*FAQ*/
+#faq{
+    width: 1320px;
+    height: 500px;
     margin: 0 auto 150px;
 }
-.title{
-    font-size: 30px;
-    padding-bottom: 20px;
+#faq h1{
+    font-size: 40px;
+    padding-bottom: 30px;
     text-align: center;
 }
-.subtitle{
+#faq p{
     font-family: 'NIXGONM-Vb';
-    font-size: 16px;
     font-weight: bold;
     padding-bottom: 50px;
     text-align: center;
 }
-.box{
-    height: 475px; /*ul에는 플루트 하면 여백 설정 안됨!*/
+
+/*질문답변 제이쿼리*/
+#section{ /*질문이랑 답변 들어있는 박스를 감싸는 젤 큰 박스*/
+	width:100%;
+	background-color:#333;
+	padding:20px 0;
+	text-align:center;
 }
-.box li{
-    width: 300px;
-    float: left;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-    text-align: left;
+.box1_1{ /*질문이랑 답변 들어있는 박스*/
+	width:1000px;
+	text-align:left;
+	padding:10px 0 20px 327px;
+	margin:0 auto;
+	background-color: skyblue;
 }
-.box li h1{
-    font-size: 20px;
-    padding: 30px 0 80px 30px;
+.accordion:hover{ /*질문 호버*/
+	text-decoration: underline;
 }
-.box li p{
-    font-family: 'NIXGONM-Vb';
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0 0 50px 30px;
+.accordion{ /*질문*/
+	cursor:pointer;
+    background: url(../images/sub5/plus.png) no-repeat right center;
 }
-.box li:nth-child(2){
-    margin: 0 40px;
-}
-.box li:nth-child(3){
-    margin-right: 40px;
+.panel{ /*답변 박스*/
+	max-height:0;
+	overflow:hidden;
+	transition:max-height 0.3s ease-out;
+	background-color: pink;
 }
 
-/*오시는길*/
-#come{
-    width: 1320px;
-    height: 400px;
-    margin: 0 auto 150px;
-    background: url(../images/sub1/line.png) no-repeat top left;
-}
-#come h1{
-    float: left;
-    font-size: 25px;
-    line-height: 38px;
-    padding-top: 5px;
-}
-.come_right{
-    width: 1160px;
-    height: 400px;
-    float: right;
-    border: 1px solid #ccc;
-}
-.come_right img{
-    display: block;
-    float: left;
-}
-.come_text{
-    float: right;
-    width: 470px;
-    margin: 40px 60px 0 0;
-}
-.come_text p{
-    font-size: 16px;
-    padding-top: 30px;
-}
 
 /*푸터*/
 #footer{
@@ -310,17 +226,4 @@ body{
     font-size: 18px;
     color: #333;
     margin: 25px 50px 0 0;
-}
-
-/*고정버튼*/
-.btn{
-    position: fixed;
-    bottom: 20px;
-    right: 75px;
-    transform: translateY(-50%);
-}
-.btn li:nth-child(1){
-    text-align: center;
-    padding-bottom: 5px;
-    color: #6e4e37;
 }

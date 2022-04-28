@@ -117,11 +117,12 @@ body{
 #tab li:nth-child(4){
     padding-right: 0;
 }
-#tab img{
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
-}
 #tab h5{
     padding-top: 10px;
+}
+#tab li img:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    transition: all 0.7s;
 }
 
 /*다도*/

@@ -91,29 +91,51 @@ body{
     margin: 100px auto 150px;
 }
 #notice h1{
-    font-size: 40px;
+    font-size: 35px;
     padding-bottom: 30px;
     text-align: center;
 }
-#notice p{
+.subtitle{
     font-family: 'NIXGONM-Vb';
     font-weight: bold;
     padding-bottom: 50px;
     text-align: center;
 }
-#notice li{
+
+/*공지사항*/
+.wrap li{
     float: left;
-    padding-right: 66px;
+    padding-right: 80px;
 }
-#notice li:nth-child(4){
+.wrap li:nth-child(4){
     padding-right: 0;
 }
-#notice li:hover{
-        background: url(../images/sub5/hover.png) no-repeat;
+.wrap img{
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 }
-#notice li:hover .hover{
-        opacity: 0.3;
-        transition: all 0.5s;
+/*팝업*/
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none; /*안보이게 만들기*/
+}
+.popup div{ /*가운데 창*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup p{
+    color: #333;
+    text-align: right;
+    padding: 0 10px 5px 0;
+}
+.popup img{
+    display: block; /*아래쪽 여백 없애기*/
 }
 
 /*FAQ*/
@@ -123,7 +145,7 @@ body{
     margin: 0 auto 150px;
 }
 #faq h1{
-    font-size: 40px;
+    font-size: 35px;
     padding-bottom: 30px;
     text-align: center;
 }

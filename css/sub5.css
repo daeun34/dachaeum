@@ -103,39 +103,88 @@ body{
 }
 
 /*공지사항*/
-.wrap li{
+.notice_wrap li{
     float: left;
     padding-right: 80px;
 }
-.wrap li:nth-child(4){
+.notice_wrap li:nth-child(4){
     padding-right: 0;
 }
-.wrap img{
+.notice_wrap img{
     box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 }
+
 /*팝업*/
-.popup{
+.popup1{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    display: none; /*안보이게 만들기*/
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;/*팝업 안보이게 만들기*/
 }
-.popup div{ /*가운데 창*/
+.popup1 div{/*가운데 창*/
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.popup p{
+.popup1 p{
     color: #333;
     text-align: right;
     padding: 0 10px 5px 0;
 }
-.popup img{
-    display: block; /*아래쪽 여백 없애기*/
+.popup1 img{
+    display: block;/*아래쪽 여백 없애기 위해*/
+}
+
+.popup2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;/*팝업 안보이게 만들기*/
+}
+.popup2 div{/*가운데 창*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup2 p{
+    color: #333;
+    text-align: right;
+    padding: 0 10px 5px 0;
+}
+.popup2 img{
+    display: block;/*아래쪽 여백 없애기 위해*/
+}
+
+.popup4{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;/*팝업 안보이게 만들기*/
+}
+.popup4 div{/*가운데 창*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup4 p{
+    color: #333;
+    text-align: right;
+    padding: 0 10px 5px 0;
+}
+.popup4 img{
+    display: block;/*아래쪽 여백 없애기 위해*/
 }
 
 /*FAQ*/
@@ -149,41 +198,53 @@ body{
     padding-bottom: 30px;
     text-align: center;
 }
-#faq p{
-    font-family: 'NIXGONM-Vb';
-    font-weight: bold;
-    padding-bottom: 50px;
-    text-align: center;
+
+#section{ /*전체*/
+	width: 1320px;
+    margin: auto;
+	text-align: center;
 }
 
-/*질문답변 제이쿼리*/
-#section{ /*질문이랑 답변 들어있는 박스를 감싸는 젤 큰 박스*/
-	width:100%;
-	background-color:#333;
-	padding:20px 0;
-	text-align:center;
-}
-.box1_1{ /*질문이랑 답변 들어있는 박스*/
-	width:1000px;
+.box1_1{ /*질문+답변 들어있는 박스*/
+	width:1320px;
+	height: 250px;
 	text-align:left;
-	padding:10px 0 20px 327px;
+	padding:10px 0 20px	0;
 	margin:0 auto;
-	background-color: skyblue;
+}
+.box1_1 li{
+	float: left;
+	padding:17px 0 10px 100px;
+}
+.box1_1 li:nth-child(4){
+	float: right;
+	padding-right: 50px;
+}
+.box{
+	clear: both;
+    border-bottom: 1px solid #000;
 }
 .accordion:hover{ /*질문 호버*/
 	text-decoration: underline;
 }
-.accordion{ /*질문*/
+.accordion{ /*질문 박스*/
+	font-size:18px;
+	color:#333;
 	cursor:pointer;
-    background: url(../images/sub5/plus.png) no-repeat right center;
+}
+.font{
+    font-size: 18px;
+    color: #333;
+    text-align: center;
 }
 .panel{ /*답변 박스*/
 	max-height:0;
 	overflow:hidden;
 	transition:max-height 0.3s ease-out;
-	background-color: pink;
 }
-
+.padding{
+    padding-left: 100px;
+}
 
 /*푸터*/
 #footer{

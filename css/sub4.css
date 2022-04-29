@@ -120,9 +120,11 @@ body{
 #tab h5{
     padding-top: 10px;
 }
-#tab li img:hover{
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-    transition: all 0.7s;
+#tab li img{
+    transition: all 1s;
+}
+#tab li:hover img{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
 /*다도*/

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1320">
     <title>다채움</title>
     <!--favicon 연결-->
-	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/main/favicon.png">
     <!--css 연결-->
 	<link href="../css/sub5.css" rel="stylesheet" type="text/css">
     <!--고딕a1 웹폰트 연결-->
@@ -17,7 +17,10 @@
 	<script src="../js/jquery-1.12.4.min.js"></script>
 	<script src="../js/script1.js"></script>
     <!--FAQ 토글-->
-    <script src="js/script.js"></script>
+    <script src="../js/script2.js"></script>
+    <!--팝업-->
+    <script src="../js/jquery-1.12.3.js"></script><!--제이쿼리 라이브러리-->
+    <script src="../js/popup.js"></script> 
 </head>
 <body>
     <div id="header"><!--헤더-->
@@ -68,69 +71,162 @@
         <h1>Notice</h1>
         <p class="subtitle">다채움과 함께하는 다양한 이벤트와 혜택 놓치지 마세요<br>공지사항 및 관련 포스팅 또한 아래에서 확인하실 수 있습니다</p>
         
-        <div class="wrap"><!--보이는 부분-->
+        <div class="notice_wrap"><!--보이는 부분-->
             <ul>
                 <li>
-                    <a href="#">
-                        <img src="../images/sub5/notice1.jpg" alt="연박할인 이벤트">
+                    <a href="#" class="a1">
+                        <img src="../images/sub5/notice1.jpg" alt="생일이벤트">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="../images/sub5/notice2.jpg" alt="연박할인 이벤트">
+                    <a href="#" class="a2">
+                        <img src="../images/sub5/notice2.jpg" alt="연박할인이벤트">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="../images/sub5/notice3.jpg" alt="연박할인 이벤트">
-                    </a>
+                    <img src="../images/sub5/notice3.jpg" alt="종료이벤트">
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="../images/sub5/notice4.jpg" alt="연박할인 이벤트">
+                    <a href="#" class="a4">
+                        <img src="../images/sub5/notice4.jpg" alt="크리스마스이벤트">
                     </a>
                 </li>
             </ul>  
         </div><!--보이는 부분-->
     
-        <div class="popup"><!--팝업-->
+        <div class="popup1"><!--팝업1-->
             <div>
                 <p><a href="#">Close X</a></p>
-                <img src="../images/sub5/popup1.jpg" alt="팝업 이미지1">
+                <img src="../images/sub5/popup1.jpg" alt="큰 이미지">
             </div>
+        </div>
+        <div class="popup2"><!--팝업2-->
             <div>
                 <p><a href="#">Close X</a></p>
-                <img src="../images/sub5/popup2.jpg" alt="팝업 이미지2">
+                <img src="../images/sub5/popup2.jpg" alt="큰 이미지">
             </div>
+        </div>
+        <div class="popup4"><!--팝업3-->
             <div>
                 <p><a href="#">Close X</a></p>
-                <img src="../images/sub5/popup3.jpg" alt="팝업 이미지3">
+                <img src="../images/sub5/popup3.jpg" alt="큰 이미지">
             </div>
-        </div><!--팝업-->
-    
-        <script src="js/jquery-1.12.3.js"></script><!--제이쿼리 라이브러리-->
-        <script src="js/popup.js"></script> 
+        </div>
     </div><!--공지사항-->
 
     <div id="faq"><!--FAQ-->
         <h1>FAQ</h1>
-        <p>
+        <p class="subtitle">
             궁금하신 부분이나 문의사항은 이곳을 확인해주세요<br>
             기타 문의사항은 인스타그램 디엠 및 카카오톡 채널을 이용해주세요
         </p>
 
-        <div><!--전체박스-->
-            <div id="section">				
-                <div id="Board01"	class="box1_1	board">
-                    <div class="accordion">Q. 아동이나 반려동물도 출입 가능한가요?</div>
-                    <p class="panel">
-                        다채움은 노키즈존입니다.<br>
-                        성인 1~2명까지 가능하시며 추가인원은 받지 않고 있습니다.<br>
-                        반려동물의 경우도 아동과 동일합니다.
-                    </p>							
-                </div>							
-            </div>
-        </div><!--전체박스-->
+        <div id="section">
+											
+            <div class="box1_1">
+                <ul class="box">
+                    <li>
+                        <div class="font">NO</div>
+                    </li>
+                    <li>
+                        <div class="font">카테고리</div>
+                    </li>
+                    <li>
+                        <div class="font padding">제목</div>
+                    </li>
+                </ul>
+                <ul class="box">
+                    <li>
+                        <div class="font">05</div>
+                    </li>
+                    <li>
+                        <div class="font">예약안내</div>
+                    </li>
+                    <li>
+                        <div class="accordion">
+                            Q. 아동이나 반려동물도 출입 가능한가요?
+                        </div>
+                        <p class="panel" style="padding:3px	18px;">
+                            A. 다채움은 노키즈존입니다.
+                            <br>성인 1~2명까지 가능하시며 추가인원은 받지 않고 있습니다.
+                            <br>반려동물의 경우도 아동과 동일합니다.
+                        </p>
+                    </li>
+                </ul>
+                <ul class="box">	
+                    <li>
+                        <div class="font">04</div>
+                    </li>
+                    <li>
+                        <div class="font">예약안내</div>
+                    </li>
+                    <li>
+                        <div class="accordion">
+                            Q. 주중과 주말 가격이 같나요?
+                        </div>
+                        <p class="panel" style="padding:3px	18px;">
+                            A. 다채움은 노키즈존입니다.
+                            <br>성인 1~2명까지 가능하시며 추가인원은 받지 않고 있습니다.
+                            <br>반려동물의 경우도 아동과 동일합니다.
+                        </p>
+                    </li>
+                </ul>
+                <ul class="box">	
+                    <li>
+                        <div class="font">03</div>
+                    </li>
+                    <li>
+                        <div class="font">Special</div>
+                    </li>
+                    <li>
+                        <div class="accordion">
+                            Q. 다도 클래스 이용을 안할 수도 있나요? 안하면 다른 클래스가 있나요?
+                        </div>
+                        <p class="panel" style="padding:3px	18px;">
+                            A. 다채움은 노키즈존입니다.
+                            <br>성인 1~2명까지 가능하시며 추가인원은 받지 않고 있습니다.
+                            <br>반려동물의 경우도 아동과 동일합니다.
+                        </p>
+                    </li>
+                </ul>
+                <ul class="box">	
+                    <li>
+                        <div class="font">02</div>
+                    </li>
+                    <li>
+                        <div class="font">Special</div>
+                    </li>
+                    <li>
+                        <div class="accordion">
+                            Q. 한식 파인 다이닝 이용시 알르레기 유무는 어떻게 알리나요?
+                        </div>
+                        <p class="panel" style="padding:3px	18px;">
+                            A. 다채움은 노키즈존입니다.
+                            <br>성인 1~2명까지 가능하시며 추가인원은 받지 않고 있습니다.
+                            <br>반려동물의 경우도 아동과 동일합니다.
+                        </p>
+                    </li>
+                </ul>
+                <ul class="box">	
+                    <li>
+                        <div class="font">01</div>
+                    </li>
+                    <li>
+                        <div class="font">이벤트</div>
+                    </li>
+                    <li>
+                        <div class="accordion">
+                            Q. 이벤트 내용은 매 달 변경되나요?
+                        </div>
+                        <p class="panel" style="padding:3px	18px;">
+                            A. 다채움은 노키즈존입니다.
+                            <br>성인 1~2명까지 가능하시며 추가인원은 받지 않고 있습니다.
+                            <br>반려동물의 경우도 아동과 동일합니다.
+                        </p>
+                    </li>
+                </ul>
+            </div>							
+        </div>	
     </div><!--FAQ-->				
 
 	<div id="footer"><!--푸터-->
@@ -160,12 +256,12 @@
 			
 		<div class="footer_inner2"><!--아래 1320px-->
 			<ul>
-				<li><a href="../sub/sub1.html #map">오시는길 ｜</a></li>
-				<li><a href="../sub/sub5.html #notice">공지사항 ｜</a></li>
-				<li><a href="../sub/sub5.html #faq">FAQ ｜</a></li>
-				<li><a href="../sub/sub4.html">스페셜 ｜</a></li>
-				<li><a href="../sub/sub1.html #about_us">About Us</a></li>
-			</ul>
+                <li><a href="../sub/sub1.html #come">come to ｜</a></li>
+                <li><a href="../sub/sub5.html #notice">notice ｜</a></li>
+                <li><a href="../sub/sub5.html #faq">FAQ ｜</a></li>
+                <li><a href="../sub/sub4.html">special ｜</a></li>
+                <li><a href="../sub/sub1.html #welcome">welcome</a></li>
+            </ul>
 			<p>
 				다채움(주) / 사업자 등록번호 123-45-67890 / 대표 : 김다은<br>
 				Copyright © DACHAEUM HANOK STAY All rights reserved.

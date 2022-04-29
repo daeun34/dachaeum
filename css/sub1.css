@@ -214,6 +214,19 @@ body{
     margin-right: 40px;
 }
 
+.box li img{
+    width: 100%;
+    transition: all 1s; /*들어갓다 나갓다 둘다 천천히 하고 싶으면 부모에!*/
+}
+.box li:hover img{
+    transform: scale(1.3);   
+}
+.box li div{
+    width: 100%;
+    height: 200px;
+    overflow: hidden; /*넘치지 않으려면 부모에!*/
+}
+
 /*오시는길*/
 #come{
     width: 1320px;

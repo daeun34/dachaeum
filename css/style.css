@@ -282,9 +282,10 @@ input::placeholder {
 }
 #special li:hover .black  {
     opacity: 0;
-    transition: all 0.5s;
 }
-
+#special li img{
+    transition: all 1s;
+}
 
 /*리뷰*/
 #review{

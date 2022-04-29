@@ -190,7 +190,7 @@ body{
 /*FAQ*/
 #faq{
     width: 1320px;
-    height: 500px;
+    height: 550px;
     margin: 0 auto 150px;
 }
 #faq h1{
@@ -214,11 +214,17 @@ body{
 }
 .box1_1 li{
 	float: left;
-	padding:17px 0 10px 100px;
+	padding:20px 0 10px 100px;
 }
-.box1_1 li:nth-child(4){
-	float: right;
-	padding-right: 50px;
+.box1_1 li:nth-child(4n){
+    float: right;
+    padding-right: 80px;
+}
+.box_pad1{
+    padding-left: 6px;
+}
+.box_pad2{
+    padding-left: 19px;
 }
 .box{
 	clear: both;
@@ -243,7 +249,7 @@ body{
 	transition:max-height 0.3s ease-out;
 }
 .padding{
-    padding-left: 100px;
+    padding-left: 280px;
 }
 
 /*푸터*/

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1320">
+    <title>다채움</title>
+    <!--favicon 연결-->
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <!--css 연결-->
+	<link href="../css/sub5.css" rel="stylesheet" type="text/css">
+    <!--고딕a1 웹폰트 연결-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--서브메뉴-->
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/script1.js"></script>
+    <!--FAQ 토글-->
+    <script src="../js/script.js"></script>
+    <!--팝업-->
+    <script src="../js/jquery-1.12.3.js"></script><!--제이쿼리 라이브러리-->
+    <script src="../js/popup.js"></script> 
+</head>
+<body>
+    <div id="header"><!--헤더-->
+        <div class="header_inner">
+            <a href="../index.html"><h1><img src="../images/main/header_logo.png" alt="로고"></h1></a>
+            <ul id="gnb"><!--메뉴-->
+                <li><a href="../sub/sub1.html">다채움</a></li>
+				<li><a href="../sub/sub2.html">공간</a></li>
+				<li><a href="../sub/sub3.html">예약</a></li>
+				<li><a href="../sub/sub4.html">스페셜</a></li>
+				<li><a href="sub5.html">소식</a></li>
+            </ul>
+        </div>
+        
+        <div class="submenu_wrap"><!--서브메뉴-->
+            <div class="submenu"><!--가운데-->
+                <div class="submenu_right"><!--오른쪽-->
+                    <ul>
+                        <li><a href="../sub/sub1.html #welcome">Welcome</a></li>
+						<li><a href="../sub/sub1.html #core_values">Core Values</a></li>
+						<li><a href="../sub/sub1.html #come">Come</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="../sub/sub2.html #room1">마음채움</a></li>
+                        <li><a href="../sub/sub2.html #room2">기쁨채움</a></li>
+                        <li><a href="../sub/sub2.html #room3">사랑채움</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="../sub/sub3.html #introduce">Reservation Tip</a></li>
+                        <li><a href="../sub/sub3.html #reservation">Reservation</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="../sub/sub4.html #dado">다도 클래스</a></li>
+                        <li><a href="../sub/sub4.html #dining">한식 파인 다이닝</a></li>
+                        <li><a href="../sub/sub4.html #spa">스파</a></li>
+                        <li class="pad4"><a href="../sub/sub4.html #cafe">카페 다채움</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#notice">Notice</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div><!--오른쪽-->
+            </div><!--가운데-->
+        </div><!--서브메뉴-->
+    </div><!--헤더-->
+
+    <div id="notice"><!--공지사항-->
+        <h1>Notice</h1>
+        <p class="subtitle">다채움과 함께하는 다양한 이벤트와 혜택 놓치지 마세요<br>공지사항 및 관련 포스팅 또한 아래에서 확인하실 수 있습니다</p>
+        
+        <div class="notice_wrap"><!--보이는 부분-->
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/sub5/notice1.jpg" alt="연박할인 이벤트">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/sub5/notice2.jpg" alt="연박할인 이벤트">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/sub5/notice3.jpg" alt="연박할인 이벤트">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/sub5/notice4.jpg" alt="연박할인 이벤트">
+                    </a>
+                </li>
+            </ul>  
+        </div><!--보이는 부분-->
+    
+        <div class="popup"><!--팝업-->
+            <div>
+                <p><a href="#">Close X</a></p>
+                <img src="../images/sub5/popup1.jpg" alt="팝업 이미지1">
+            </div>
+            <div>
+                <p><a href="#">Close X</a></p>
+                <img src="../images/sub5/popup2.jpg" alt="팝업 이미지2">
+            </div>
+            <div>
+                <p><a href="#">Close X</a></p>
+                <img src="../images/sub5/popup3.jpg" alt="팝업 이미지3">
+            </div>
+        </div><!--팝업-->
+    </div><!--공지사항-->
+
+    <div id="faq"><!--FAQ-->
+        <h1>FAQ</h1>
+        <p>
+            궁금하신 부분이나 문의사항은 이곳을 확인해주세요<br>
+            기타 문의사항은 인스타그램 디엠 및 카카오톡 채널을 이용해주세요
+        </p>
+
+        <div><!--전체박스-->
+            <div id="section">				
+                <div id="Board01"	class="box1_1	board">
+                    <div class="accordion">Q. 아동이나 반려동물도 출입 가능한가요?</div>
+                    <p class="panel">
+                        다채움은 노키즈존입니다.<br>
+                        성인 1~2명까지 가능하시며 추가인원은 받지 않고 있습니다.<br>
+                        반려동물의 경우도 아동과 동일합니다.
+                    </p>							
+                </div>							
+            </div>
+        </div><!--전체박스-->
+    </div><!--FAQ-->				
+
+	<div id="footer"><!--푸터-->
+		<div class="wrap"><!--위칸 전체(아래선)-->
+			<div class="footer_inner1"><!--위 1320px-->
+				<ul>
+					<li>
+						<img src="../images/main/footer/footer_icon_map.png" alt="지도 아이콘">
+						<p>부산시 기장군 정관읍 곰내길 626-7</p>
+					</li>
+					<li>
+						<img src="../images/main/footer/footer_icon_bank.png" alt="계좌 아이콘">
+						<p>국민은행 12-3456-89-777</p>
+					</li>
+					<li>
+						<img src="../images/main/footer/footer_icon_tel.png" alt="전화 아이콘">
+						<p>010.123.4567</p>
+					</li>
+				</ul>
+				<select>
+					<option value="family site">FAMILY SITE</option>
+					<option value="homepage">HOMEPAGE</option>
+					<option value="about">ABOUT</option>
+				</select>
+			</div><!--위 1320px-->
+		</div><!--위칸 전체(아래선)-->
+			
+		<div class="footer_inner2"><!--아래 1320px-->
+			<ul>
+                <li><a href="../sub/sub1.html #come">come to ｜</a></li>
+                <li><a href="../sub/sub5.html #notice">notice ｜</a></li>
+                <li><a href="../sub/sub5.html #faq">FAQ ｜</a></li>
+                <li><a href="../sub/sub4.html">special ｜</a></li>
+                <li><a href="../sub/sub1.html #welcome">welcome</a></li>
+            </ul>
+			<p>
+				다채움(주) / 사업자 등록번호 123-45-67890 / 대표 : 김다은<br>
+				Copyright © DACHAEUM HANOK STAY All rights reserved.
+			</p>
+		</div><!--아래 1320px-->
+	</div><!--푸터-->
+</body>
+</html>

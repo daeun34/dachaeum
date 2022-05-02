@@ -16,7 +16,7 @@ a{text-decoration: none; color: #333;}
 body{
     font-family: 'S-CoreDream-6Bold';
     font-size: 14px;
-    line-height: 24px;
+    line-height: 22px;
     color: #333;
     min-width: 1320px;
 }
@@ -28,12 +28,12 @@ body{
 }
 .header_inner{
     width: 1320px;
-    height: 107px;
+    height: 99px;
     margin: auto;
 }
 .header_inner img{
     float: left;
-    padding: 20px 0 20px 20px;
+    padding: 15px 0 15px 15px;
 }
 #gnb{
     float: right;
@@ -44,8 +44,8 @@ body{
 }
 #gnb li a{
     display: block;
-    padding: 60px 0px 20px 0px;
-    font-size: 20px;
+    padding: 60px 0px 15px 0px;
+    font-size: 18px;
     width: 207px;
 }
 #gnb li:hover a{
@@ -55,7 +55,7 @@ body{
 /*서브메뉴*/
 .submenu_wrap{
 	position: absolute;
-	top: 107px;
+	top: 99px;
 	left: 0;
 	width: 100%;
 	background-color: #fff;
@@ -86,40 +86,46 @@ body{
 
 /*예약안내*/
 #introduce{
-    width: 1320px;
-    height: 800px;
+    width: 100%;
+    height: 850px;
     margin: 100px auto 150px;
-    background-color: #fff6e7;
+    background-color: #f2f2f2;
+    padding: 80px 0;
+    box-sizing: border-box;
+}
+.introduce_inner{
+    width: 1200px;
+    height: 600px;
+    margin: auto;
     text-align: center;
     position: relative;
 }
-#introduce h1{
+.introduce_inner h1{
     font-size: 30px;
-    padding: 60px 0 15px;
+    padding-bottom: 20px;
 }
-#introduce h5{
+.subtitle{
     font-family: 'NIXGONM-Vb';
-    font-size: 16px;
+    font-weight: bold;
     padding-bottom: 50px;
 }
 .position1{
     position: absolute;
-    top: 70px;
-    left: 60px;
+    top: 25px;
+    left: 0;
     font-size: 12px;
 }
 .position2{
     position: absolute;
-    top: 70px;
-    right: 60px;
+    top: 25px;
+    right: 0;
     font-size: 12px;
 }
-.introduce_inner{
+.introduce_content{
+    background-color: #fff;
     width: 1200px;
     height: 550px;
     margin: auto;
-    background-color: #fff;
-
 }
 .left{
     float: left;
@@ -140,7 +146,6 @@ body{
 }
 .text p{
     font-family: 'NIXGONM-Vb';
-    font-size: 14px;
     font-weight: bold;
 }
 .left p{
@@ -154,20 +159,24 @@ span{
 /*예약*/
 #reservation{
     width: 1320px;
-    height: 1705px;
+    height: 1810px;
     margin: 0 auto 150px;
     text-align: center;
 }
 .title{
     font-size: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 /*1단계 날짜선택*/
 .phase{
-    border-bottom: 1px solid #333;
-    padding-bottom: 5px;
-    margin-bottom: 50px;
+    width: 160px;
+    margin: 0 auto 50px;
+    border-radius: 50px;
+    background-color: #61564e;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
 }
 .calendar{
     margin-bottom: 100px;
@@ -220,7 +229,8 @@ input{
     width: 1320px;
     height: 370px;
     margin: auto;
-    border-bottom: 1px solid #333;
+    border: 1px solid #333;
+    padding-top: 35px;
     position: relative;
 }
 .input_left{
@@ -253,14 +263,24 @@ input{
 }
 .input_left li{
     float: left;
+}
+.input_left li:nth-child(1){
+    padding-top: 5px;
+}
+.input_left li:nth-child(3){
+    padding-top: 5px;
+}
+.input_left li:nth-child(2){
     padding-right: 50px;
 }
 .phase_inner input{
     float: left;
     margin-bottom: 20px;
+    outline: none;
 }
 .phase_inner textarea{
     float: left;
+    outline: none;
 }
 .input_right h1{
     font-size: 18px;
@@ -278,6 +298,12 @@ input{
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
+}
+.input_right li{
+    float: left;
+}
+.input_right li:nth-child(1){
+    padding-top: 5px;
 }
 
 /*예약완료*/
@@ -337,7 +363,7 @@ input{
 .footer_inner2 li a{
     display: block;
     padding-right: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
 }
 .footer_inner2 p{
@@ -345,6 +371,7 @@ input{
     text-align: left;
     font-family: 'Gothic A1', sans-serif;;
     font-size: 12px;
+    line-height: 18px;
     color: #fff;
     padding-top: 30px;
 }
@@ -353,9 +380,11 @@ input{
     padding: 10px 40px 10px 20px;
     background: #dbcec7 url(../images/main/footer/select_icon_black.png) no-repeat 90% center;
     font-family: 'S-CoreDream-6Bold';
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
     margin: 25px 50px 0 0;
+    appearance: none;
+    outline: none;
 }
 
 /*고정버튼*/

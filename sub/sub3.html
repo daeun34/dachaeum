@@ -63,37 +63,39 @@
     </div><!--헤더-->
 
     <div id="introduce"><!--예약안내-->
-        <h1>Reservation Tip</h1>
-        <h5>예약 안내사항과 요금규정 및 환불규정을 확인하세요</h5>
-        <p class="position1">예약안내</p>
-        <p class="position2">환불규정</p>
-
         <div class="introduce_inner">
-            <img src="../images/sub3/tip/tip1.jpg" alt="왼쪽 이미지" class="img left">
-            <div class="right text">
-                <h2>예약 안내</h2>
-                <p>
-                    예약신청 후 결제가 완료되면, 예약이 확정됩니다.<br>
-                    예약신청 후 <span>12시간 이내</span>에 입금되지 않을 경우, 예약이 취소됩니다.<br>
-                    한 날짜에 예약신청이 중복될 경우, 입금 순서가 아닌 <span>신청 순서</span>로 예약이 확정됩니다.<br>
-                    계좌이체 결제시 현금영수증 발행이 가능합니다. 예약시 요청사항에 신청해주세요.<br>
-                    <span>예약 변경 및 취소</span>는 예약 안내 문자가 발송된 번호로 문자주세요.<br>
-                    (예약자 이름 / 체크인 날짜)
-                </p>
-            </div>
+            <h1>Reservation Tip</h1>
+            <p class="subtitle">예약 안내사항과 요금규정 및 환불규정을 확인하세요</p>
+            <p class="position1">예약안내</p>
+            <p class="position2">환불규정</p>
 
-            <img src="../images/sub3/tip/tip2.jpg" alt="오른쪽 이미지" class="img right">
-            <div class="left text">
-                <h2>요금 및 환불규정</h2>
-                <p>
-                    1인요금 : 200,000원 / 2인요금 : 260,000원<br>
-                    주중, 주말요금은 같으며 최대 2인까지만 예약이 가능합니다.
-                </p>
-                <p>
-                    이용 10일 전까지 총 결제금액의 100% 환불<br>
-                    이용 5일 전까지 총 결제금액의 50% 환불<br>
-                    이용 3일 전까지 변경 / 환불 불가
-                </p>
+            <div class="introduce_content">
+                <img src="../images/sub3/tip/tip1.jpg" alt="왼쪽 이미지" class="img left">
+                <div class="right text">
+                    <h2>예약 안내</h2>
+                    <p>
+                        예약신청 후 결제가 완료되면, 예약이 확정됩니다.<br>
+                        예약신청 후 <span>12시간 이내</span>에 입금되지 않을 경우, 예약이 취소됩니다.<br>
+                        한 날짜에 예약신청이 중복될 경우, 입금 순서가 아닌 <span>신청 순서</span>로 예약이 확정됩니다.<br>
+                        계좌이체 결제시 현금영수증 발행이 가능합니다. 예약시 요청사항에 신청해주세요.<br>
+                        <span>예약 변경 및 취소</span>는 예약 안내 문자가 발송된 번호로 문자주세요.<br>
+                        (예약자 이름 / 체크인 날짜)
+                    </p>
+                </div>
+
+                <img src="../images/sub3/tip/tip2.jpg" alt="오른쪽 이미지" class="img right">
+                <div class="left text">
+                    <h2>요금 및 환불규정</h2>
+                    <p>
+                        1인요금 : 200,000원 / 2인요금 : 260,000원<br>
+                        주중, 주말요금은 같으며 최대 2인까지만 예약이 가능합니다.
+                    </p>
+                    <p>
+                        이용 10일 전까지 총 결제금액의 100% 환불<br>
+                        이용 5일 전까지 총 결제금액의 50% 환불<br>
+                        이용 3일 전까지 변경 / 환불 불가
+                    </p>
+                </div>
             </div>
         </div>
     </div><!--예약안내-->
@@ -101,6 +103,7 @@
 
     <div id="reservation"><!--예약-->
         <h1 class="title">Reservation</h1>
+        <p class="subtitle">총 3단계의 예약과정을 통해 다채움 이용에 한걸음 다가가세요</p>
         <div class="phase">1단계 날짜선택</div>
         <div class="calendar">
             <img src="../images/sub3/reservation/pre.png" alt="이전">
@@ -138,8 +141,10 @@
                 <input type="tel">
                 <h1>인원</h1>
                 <ul>
-                    <li><input type="checkbox">1명</li>
-                    <li><input type="checkbox">2명</li>
+                    <li><input type="checkbox"></li>
+                    <li>1명</li>
+                    <li><input type="checkbox"></li>
+                    <li>2명</li>
                 </ul>
                 <h1>요청사항</h1>
                 <textarea cols="45" rows="5" placeholder="요청사항을 입력해주세요"></textarea>
@@ -161,7 +166,10 @@
                         동의를 거부할 경우에는 예약이 불가합니다.
                     </p>
                 </div>
-                <input type="checkbox">위 개인정보 수집 및 이용에 동의합니다.
+                <ul>
+                    <li><input type="checkbox"></li>
+                    <li>위 개인정보 수집 및 이용에 동의합니다.</li>
+                </ul>
             </div>
         </div>
         <a href="javascript:return false;" class="complete">예약완료</a>
